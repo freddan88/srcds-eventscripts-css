@@ -1,0 +1,22 @@
+// Coded by www.leemann.se/fredrik
+// Recuires eventscript 1.X or later
+
+block load
+{
+	es_xsetinfo r_msg 1
+ 	es_makepublic r_msg by www.leemann.se/fredrik
+	es_msg r_msg by www.leemann.se/fredrik loaded!
+}
+
+block unload
+{
+	es_xsetinfo r_msg 0
+	es_msg r_msg by www.leemann.se/fredrik unloaded!
+}
+
+event round_start
+{
+	es_msg #lightgreen "Min: rate" server_var(sv_minrate)"cl_cmdrate" server_var(sv_mincmdrate)"cl_updaterate" server_var(sv_minupdaterate)
+	es_msg #lightgreen "Max: rate" server_var(sv_maxrate)"cl_cmdrate" server_var(sv_maxcmdrate)"cl_updaterate" server_var(sv_maxupdaterate)
+	es_msg #lightgreen "Current map is" server_var(eventscripts_currentmap)
+}

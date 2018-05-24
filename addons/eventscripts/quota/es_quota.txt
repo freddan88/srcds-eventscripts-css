@@ -1,0 +1,30 @@
+﻿// Dynamic Bot Quota
+// Coded by Fps_sWe|Fredd|SDK/VHE - www.leemann.se/fredrik
+// Version: 1.0 - 2014-03-04
+//////////////////////////////////////////////////////////
+
+block load
+{
+	es_xsetinfo quota 1
+	es_xsetinfo alive 0
+	es_xsetinfo bot 0
+ 	es_makepublic quota by www.leemann.se/fredrik
+	es_msg Quota by www.leemann.se/fredrik loaded!
+}
+
+block unload
+{
+	es_xsetinfo quota 0
+	es_msg Quota by www.leemann.se/fredrik unloaded!
+}
+
+event player_spawn
+{
+	getplayercount alive #alive
+	getplayercount bot #bot
+	es_setinfo human server_var(alive)
+	es_math human subtract server_var(bot)
+
+	if (server_var(human) < 3) then bot_quota 4
+	if (server_var(human) > 2) then bot_quota 0
+}

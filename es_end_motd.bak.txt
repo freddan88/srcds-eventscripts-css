@@ -1,0 +1,22 @@
+// Coded by www.leemann.se/fredrik
+// Configure sm_motd_url in cfg/server.cfg Example: sm_motd_url "http://url.html"
+// Recuires eventscript, sourcemod and m3motd by KaOs (https://forums.alliedmods.net/showthread.php?t=66795)
+
+block load
+{
+	es_xsetinfo end_motd 1
+	es_loadevents declare resource/modevents.res
+ 	es_makepublic end_motd by www.leemann.se/fredrik
+	es_msg end_motd by www.leemann.se/fredrik loaded!
+}
+
+block unload
+{
+	es_xsetinfo end_motd 0
+	es_msg end_motd by www.leemann.se/fredrik unloaded!
+}
+
+event cs_win_panel_match
+{
+	sm_motd @all
+}
