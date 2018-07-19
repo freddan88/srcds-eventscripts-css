@@ -7,6 +7,9 @@ Donate: https://www.paypal.me/freddan88
 YouTube: https://www.youtube.com/user/FreLee54
 GitHub: https://github.com/freddan88
 
+Download:
+http://www.leemann.se/fredrik/file_downloads/srcds_eventscripts-css.zip
+
 Mattie eventscript
 http://mattie.net/cs
 
@@ -69,5 +72,5 @@ Requires: eventscript, sourcemod, m3motd by KaOs (https://forums.alliedmods.net/
 Configuration:
 Change "sm_motd_url" to the website you like to show in server.cfg
 
-
+-----------------------------------
 Display end off map motd to players
