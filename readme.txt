@@ -12,17 +12,18 @@ http://www.leemann.se/fredrik/file_downloads/srcds_eventscripts-css.zip
 
 Mattie eventscript
 http://mattie.net/cs
-
 ####################
 
-I take no responsibility for this script, use at your own risk
+----------------------------------------------------
+License MIT: https://choosealicense.com/licenses/mit
+----------------------------------------------------
 
-----------------------
+I take no responsibility for this script, use at your own risk
+**************************************************************
 
 This scriptpack includes 3 scriptfiles to use with Mattie eventscript
 All addons are tested in CentOS, Windows and are working for Counter-Strike Source
-
--------------------------------------------------------
+----------------------------------------------------------------------------------
 
 cstrike\addons\eventscripts\end_motd
 
